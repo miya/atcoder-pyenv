@@ -21,9 +21,3 @@ Login with atcoder-cli
 ```bash
 $ acc login
 ```
-
-## Usage
-
-
-
-
