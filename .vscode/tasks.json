@@ -1,0 +1,35 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "execution",
+      "command": "cd ${fileDirname} && python3 main.py"
+    },
+    {
+      "type": "shell",
+      "label": "test",
+      "command": "cd ${fileDirname} && oj t -c 'python3 main.py'",
+    },
+    {
+      "type": "shell",
+      "label": "submit",
+      "command": "cd ${fileDirname} && acc s",
+    },
+    {
+      "type": "shell",
+      "label": "new",
+      "command": "cd problems && acc new ${input:contestId}"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "contestId",
+      "description": "コンテストのID", 
+      "default": "abc",
+      "type": "promptString"
+    }
+  ]
+}

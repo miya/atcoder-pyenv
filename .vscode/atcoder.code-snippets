@@ -1,0 +1,46 @@
+{
+	"input-1": {
+		"prefix": "input-1",
+		"body": "int(input())",
+		"description": "入力された値を代入"
+	},
+
+	"input-2": {
+		"prefix": "input-2",
+		"body": "map(int, input().split())",
+		"description": "入力されたn個の値をn個の変数に代入"
+	},
+
+	"input-3": {
+		"prefix": "input-3",
+		"body": "list(map(int, input().split()))",
+		"description": "入力された複数の値を1つのリストに代入"
+	},
+
+	"input-4": {
+		"prefix": "input-4",
+		"body": "[int(input()) for _ in range(n)]",
+		"description": "縦に入力された複数の値を1つのリストに代入"
+	},
+
+	"input-5": {
+		"prefix": "input-5",
+		"body": [
+			"n = int(input())",
+			"x = list(map(int, input().split()))",
+			"y = list(map(int, input().split()))",
+		],
+		"description": ""
+	},
+
+	"input-6": {
+		"prefix": "input-6",
+		"body": [
+			"n = int(input())",
+			"l = []",
+			"for i in range(n):",
+			"  a, b = input().split()",
+			"  l.append([a, int(b)])"
+		]
+	}
+}
