@@ -13,6 +13,7 @@ RUN apt-get update \
 
 # shellの変更
 SHELL ["/bin/zsh", "-c"]
+RUN chsh -s /bin/zsh
 
 # pythonパッケージのインストール
 COPY requirements.txt ./
