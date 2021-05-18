@@ -21,3 +21,41 @@ Login with atcoder-cli
 ```bash
 $ acc login
 ```
+
+## Keybind
+Rewrite keybindings.json
+
+```json
+[
+  // Run main.py
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.tasks.runTask",
+    "when": "editorTextFocus",
+    "args": "execution",
+  },
+
+  // Creating test cases
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.tasks.runTask",
+    "args": "new",
+  },
+
+  // Running the test
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.tasks.runTask",
+    "when": "editorTextFocus",
+    "args": "test",
+  },
+  
+  // Submit the code
+  {
+    "key": "ctrl+s",
+    "command": "workbench.action.tasks.runTask",
+    "when": "editorTextFocus",
+    "args": "submit",
+  }
+]
+```
