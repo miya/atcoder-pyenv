@@ -6,13 +6,19 @@
 	"service": "dev",
 	"workspaceFolder": "/workspace",
 	"settings": {
-		"terminal.integrated.shell.linux": null
+		"files.autoSave": "afterDelay",
+		"python.pythonPath": "/usr/local/bin/python",
+		"python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.pep8Enabled": false,
+    "python.linting.flake8Enabled": true,
+		"python.linting.flake8Args": [
+			"--ignore=E111, E114, E402, E501"
+		],
 	},
 	"extensions": [
-		"ms-vscode-remote.remote-containers",
-		"ms-pyright.pyright",
-		"coenraads.bracket-pair-colorizer",
 		"ms-python.python",
+		"shardulm94.trailing-spaces"
 	],
 	"shutdownAction": "stopCompose"
 }
