@@ -1,6 +1,12 @@
+# atcoder
 numpy
 scipy
 scikit-learn
 numba
 networkx
+
+# judge tool
 online-judge-tools
+
+# lint
+flake8
