@@ -13,5 +13,6 @@ services:
       - ~/.zshrc:/root/.zshrc
       - ~/.vimrc:/root/.vimrc
       - ~/.gitconfig:/root/.gitconfig
-  
+    
+    tty: true
     command: /bin/sh -c "while sleep 1000; do :; done"
