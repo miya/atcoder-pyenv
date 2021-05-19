@@ -6,7 +6,7 @@ LABEL descriptions = "Environment for doing AtCoder in Python3"
 
 RUN apt-get update \
   && apt-get upgrade -y \
-  && apt-get -y install zsh vim git \
+  && apt-get -y install zsh vim git time \
   && apt-get autoremove -y \
   && apt-get clean -y \
   && rm -rf /var/lib/apt/lists/*
