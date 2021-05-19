@@ -1,9 +1,6 @@
 ARG PYTHON_VERSION=3.8.2
 FROM python:${PYTHON_VERSION}
 
-LABEL version = 1.0
-LABEL descriptions = "Environment for doing AtCoder in Python3"
-
 ARG WORKDIR=/workspace
 WORKDIR ${WORKDIR}
 
