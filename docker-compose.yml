@@ -1,8 +1,17 @@
 version: '3'
 services:
   dev:
+    image: atcoder-pyenv
+    container_name: atcoder-pyenv-conrainer
+
     build:
       context: .
       dockerfile: .devcontainer/Dockerfile
-
-    image: atcoder-pyenv
+    
+    volumes:
+      - .:/workspace:cached
+      - ~/.zshrc:/root/.zshrc
+      - ~/.vimrc:/root/.vimrc
+      - ~/.gitconfig:/root/.gitconfig
+  
+    command: /bin/sh -c "while sleep 1000; do :; done"
