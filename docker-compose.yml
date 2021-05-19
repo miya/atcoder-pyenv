@@ -7,12 +7,12 @@ services:
     build:
       context: .
       dockerfile: .devcontainer/Dockerfile
-    
+
     volumes:
       - .:/workspace:cached
       - ~/.zshrc:/root/.zshrc
       - ~/.vimrc:/root/.vimrc
       - ~/.gitconfig:/root/.gitconfig
-    
+
     tty: true
     command: /bin/sh -c "while sleep 1000; do :; done"
