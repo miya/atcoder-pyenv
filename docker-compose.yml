@@ -3,6 +3,6 @@ services:
   dev:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: .devcontainer/Dockerfile
 
     image: atcoder-pyenv
