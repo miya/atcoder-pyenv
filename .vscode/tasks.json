@@ -27,7 +27,7 @@
   "inputs": [
     {
       "id": "contestId",
-      "description": "コンテストのID", 
+      "description": "コンテストのID",
       "default": "abc",
       "type": "promptString"
     }
