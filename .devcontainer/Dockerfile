@@ -4,6 +4,9 @@ FROM python:${PYTHON_VERSION}
 LABEL version = 1.0
 LABEL descriptions = "Environment for doing AtCoder in Python3"
 
+ARG WORKDIR=/workspace
+WORKDIR ${WORKDIR}
+
 RUN apt-get update \
   && apt-get upgrade -y \
   && apt-get -y install zsh vim git time \
@@ -23,9 +26,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
     && apt-get install -y nodejs \
     && npm install --global atcoder-cli
-
-ARG WORKDIR=/project
-WORKDIR ${WORKDIR}
 
 # テストケースのディレクトリー名を test にする
 RUN acc config default-test-dirname-format test
